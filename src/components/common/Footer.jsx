@@ -196,7 +196,7 @@ const Footer = () => {
                   className=" grid grid-cols-[12px_1fr] items-start gap-2 text-gray-50 border border-stone-700 bg-stone-700 hover:bg-white hover:text-stone-700 duration-300 rounded w-fit py-1.5 pl-2 pr-3 font-medium text-sm"
                 >
                   <IoLocationOutline className=" mt-1" />
-                  <p>Anna Nagar</p>
+                  <p>Chennai</p>
                 </a>
                 <p>The Hive, Level 3 VR Mall,</p>
                 <p>Next to Madras House,</p>
@@ -212,7 +212,7 @@ const Footer = () => {
                   className=" grid grid-cols-[12px_1fr] items-start gap-2 text-gray-50 border border-stone-700 bg-stone-700 hover:bg-white hover:text-stone-700 duration-300 rounded w-fit py-1.5 pl-2 pr-3 font-medium text-sm"
                 >
                   <IoLocationOutline className=" mt-1" />
-                  <p>RS Puram</p>
+                  <p>Coimbatore</p>
                 </a>
                 <p>No. 147-148, DB Road,</p>
                 <p>1st Floor, Vijay Enclave,</p>
