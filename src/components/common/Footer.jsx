@@ -172,11 +172,11 @@ const Footer = () => {
                     {" "}
                     Contact us{" "}
                   </Link>
-                  <Link className="hover:opacity-75" to="/privacy-policy">
+                  <Link className="hover:opacity-75" to="/privacypolicy">
                     {" "}
                     Privacy Policy{" "}
                   </Link>
-                  <Link className="hover:opacity-75" to="/terms-conditions">
+                  <Link className="hover:opacity-75" to="/termscondition">
                     {" "}
                     Terms &amp; Conditions{" "}
                   </Link>
