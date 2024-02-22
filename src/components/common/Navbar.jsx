@@ -37,7 +37,7 @@ const Navbar = (type) => {
   return (
     <div
       className={` flex justify-between items-center py-5 px-3 sm:px-10 md:px-20 font-noto-sans ${
-        type === "frame" ? " bg-transparent" : " bg-opacity-50 bg-white "
+        type === "frame" ? " bg-transparent" : " bg-opacity-80 bg-white "
       } `}
     >
       <img

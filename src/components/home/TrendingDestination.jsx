@@ -19,7 +19,7 @@ const TrendingDestination = () => {
   }, []);
   return (
     <div className=" py-20 px-8 sm:px-12 md:px-8 lg:px-16">
-      <h1 className=" text-left font-josefin-sans font-medium text-2xl text-[#181818] py-5">
+      <h1 className=" text-center font-josefin-sans font-medium text-2xl text-[#181818] py-5">
         TRENDING DESTINATION
       </h1>
       <div className=" flex flex-wrap justify-center items-center gap-5 lg:gap-10">

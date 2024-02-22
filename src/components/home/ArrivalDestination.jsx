@@ -27,7 +27,7 @@ const ArrivalDestination = () => {
 
   return (
     <div className=" py-8 px-8 sm:px-12 md:px-8 lg:px-16">
-      <h1 className=" text-left font-josefin-sans font-medium text-2xl text-[#181818] py-5">
+      <h1 className=" text-center font-josefin-sans font-medium text-2xl text-[#181818] py-5">
         VISA ON ARRIVAL DESTINATION
       </h1>
       <div className=" grid sm:grid-cols-2 lg:flex justify-center items-center gap-5 lg:gap-3 xl:gap-10">

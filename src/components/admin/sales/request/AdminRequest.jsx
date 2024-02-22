@@ -142,6 +142,91 @@ const AdminRequest = () => {
     fetchRequests();
   }, []);
 
+  const userToken = sessionStorage.getItem("userToken");
+
+  const handleChangeStatus = (e, row) => {
+    if (e.target && e.target.value !== undefined) {
+      row.status = e.target.value;
+      const { status, surveyId } = row;
+
+      const config = {
+        headers: {
+          Authorization: `Bearer ${userToken}`,
+        },
+      };
+
+      axios
+        .post(
+          `${
+            import.meta.env.VITE_API_URL
+          }/api/request/update-status/${surveyId}`,
+          { status }, // Send only the status property
+          config
+        )
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      console.log("Error: e.target or e.target.value is undefined.");
+    }
+  };
+
+  const [salesAdminList, setSalesAdminList] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_API_URL}/api/employee/salesadmin`)
+      .then((res) => {
+        console.log(res.data);
+        setSalesAdminList(res.data);
+        setFormData({ ...formData, handledBy: res.data[0]?.name });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  const handleChangeSalesAdmin = (e, row) => {
+    const newHandledBy = e.target.value;
+    // Update the handledBy field for the corresponding row
+    const updatedRequests = requests.map((request) =>
+      request.surveyId === row.surveyId
+        ? { ...request, handledBy: newHandledBy }
+        : request
+    );
+    setRequests(updatedRequests);
+
+    // Update the formData state
+    setFormData((prevState) => ({
+      ...prevState,
+      handledBy: newHandledBy,
+    }));
+
+    // Send the update request to the backend
+    const config = {
+      headers: {
+        Authorization: `Bearer ${userToken}`,
+      },
+    };
+
+    axios
+      .post(
+        `${import.meta.env.VITE_API_URL}/api/request/update-handledBy/${
+          row.surveyId
+        }`,
+        { handledBy: newHandledBy }, // Send only the handledBy property
+        config
+      )
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div className=" ml-16 sm:ml-52 lg:ml-80 py-20 px-4 sm:px-10">
       <div className=" flex flex-col sm:flex-row gap-2 justify-between sm:items-center pb-20">
@@ -212,9 +297,45 @@ const AdminRequest = () => {
                   <td className="py-3 px-5">{row.destination}</td>
                   <td className="py-3 px-5">{row.tourPlanName}</td>
                   <td className="py-3 px-5">
-                    {row.handledBy ? row.handledBy : "Not Assigned"}
+                    <select
+                      className=" border border-stone-500 rounded-md py-2 px-3 focus:outline-none"
+                      name="handledBy"
+                      id="handledBy"
+                      onChange={(e) => handleChangeSalesAdmin(e, row)} // Pass the event object (e) and the current row
+                      value={row.handledBy}
+                    >
+                      {salesAdminList?.map((item, index) => (
+                        <option key={index} value={item.name}>
+                          {item.name}
+                        </option>
+                      ))}
+                    </select>
                   </td>
-                  <td className="py-3 px-5">{row.status}</td>
+                  <td className="py-3 px-5">
+                    {/* {row.status} */}
+
+                    <select
+                      className="border border-stone-500 rounded-md py-2 px-3 focus:outline-none"
+                      name="status"
+                      id="status"
+                      onChange={(e) => handleChangeStatus(e, row)} // Pass the event object (e) as the first argument
+                      value={row.status}
+                    >
+                      <option value="Query Received">Query Received</option>
+                      <option value="On Progress">On Progress</option>
+                      <option value="Plan Shared">Plan Shared</option>
+                      <option value="Cancelled">Cancelled</option>
+                      <option value="On Hold">On Hold</option>
+                      <option value="Duplicate Query">Duplicate Query</option>
+                      <option value="Tour Booked">Tour Booked</option>
+                      <option value="Awaiting Payment">Awaiting Payment</option>
+                      <option value="Cancellation Requested">
+                        Cancellation Requested
+                      </option>
+                      <option value="Estimated">Estimated</option>
+                      <option value="Completed">Completed</option>
+                    </select>
+                  </td>
                   <td className="py-3 px-5">
                     <div className=" flex items-center gap-3 text-xl">
                       <span>

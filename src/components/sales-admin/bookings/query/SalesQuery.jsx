@@ -148,6 +148,39 @@ const SalesQuery = () => {
     fetchRequests();
   }, []);
 
+  const userToken = sessionStorage.getItem("userToken");
+
+  const handleChangeStatus = (e, row) => {
+    if (e.target && e.target.value !== undefined) {
+      // Check if e.target and e.target.value are defined
+      row.status = e.target.value; // Update the status directly in the row object
+      const { status, surveyId } = row; // Destructure only the required properties
+
+      const config = {
+        headers: {
+          Authorization: `Bearer ${userToken}`,
+        },
+      };
+
+      axios
+        .post(
+          `${
+            import.meta.env.VITE_API_URL
+          }/api/request/update-status/${surveyId}`,
+          { status }, // Send only the status property
+          config
+        )
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      console.log("Error: e.target or e.target.value is undefined.");
+    }
+  };
+
   return (
     <div className=" py-20 px-4 sm:px-10">
       <div className=" flex flex-col sm:flex-row gap-2 justify-between sm:items-center pb-20">
@@ -217,7 +250,31 @@ const SalesQuery = () => {
                   <td className="py-3 px-5">
                     {row.handledBy ? row.handledBy : "Not Assigned"}
                   </td>
-                  <td className="py-3 px-5">{row.status}</td>
+                  <td className="py-3 px-5">
+                    {/* {row.status} */}
+
+                    <select
+                      className="border border-stone-500 rounded-md py-2 px-3 focus:outline-none"
+                      name="status"
+                      id="status"
+                      onChange={(e) => handleChangeStatus(e, row)} // Pass the event object (e) as the first argument
+                      value={row.status}
+                    >
+                      <option value="Query Received">Query Received</option>
+                      <option value="On Progress">On Progress</option>
+                      <option value="Plan Shared">Plan Shared</option>
+                      <option value="Cancelled">Cancelled</option>
+                      <option value="On Hold">On Hold</option>
+                      <option value="Duplicate Query">Duplicate Query</option>
+                      <option value="Tour Booked">Tour Booked</option>
+                      <option value="Awaiting Payment">Awaiting Payment</option>
+                      <option value="Cancellation Requested">
+                        Cancellation Requested
+                      </option>
+                      <option value="Estimated">Estimated</option>
+                      <option value="Completed">Completed</option>
+                    </select>
+                  </td>
                   <td className="py-3 px-5">
                     <div className=" flex items-center gap-3 text-xl">
                       <span>
