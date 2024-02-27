@@ -46,10 +46,10 @@ const DestinationCard = ({ destination }) => {
         <div className="font-bold text-stone-900 text-2xl">
           {destination.countryName || destination.stateName}
         </div>
-        <p className="text-primary text-sm mb-2 font-semibold">
+        <p className="text-primary text-sm mt-2 font-semibold">
           {destination?.idealDays || destination?.bestTimeToVisit[0]}
         </p>
-        <p className=" text-sm text-stone-600">
+        <p className=" text-sm mt-1 text-stone-600">
           {destination?.aboutCountry?.length > 180
             ? destination?.aboutCountry?.slice(0, 180) + "..."
             : destination?.aboutCountry || destination?.aboutState?.length > 180
@@ -58,7 +58,7 @@ const DestinationCard = ({ destination }) => {
         </p>
         <button
           onClick={handleNavigation}
-          className=" mt-2 py-1.5 px-4 font-semibold bg-primary text-white border border-primary rounded"
+          className="mt-2 py-1.5 px-4 font-semibold w-40 text-black border border-black rounded"
         >
           Explore
         </button>

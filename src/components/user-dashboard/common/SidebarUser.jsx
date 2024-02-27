@@ -58,12 +58,6 @@ const initialNavigation = [
     current: false,
   },
   {
-    name: "My visa request",
-    icon: FaCcVisa,
-    href: "/dashboard/visa",
-    current: false,
-  },
-  {
     name: "User profile",
     icon: CgProfile,
     href: "/dashboard/profile",

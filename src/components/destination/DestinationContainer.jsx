@@ -51,7 +51,7 @@ const DestinationContainer = () => {
   return (
     <>
       <div className=" bg-white py-5 px-7">
-        <div className=" py-4 px-4 sm:px-10 md:px-20 lg:px-12 xl:px-16 2xl:px-28  flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between ">
+        <div className=" sm:px-10 md:px-20 lg:px-12 xl:pr-16 xl:pl-4 2xl:px-28  flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between ">
           <h1 className=" font-bold text-stone-700 text-3xl sm:text-3xl md:text-4xl">
             Destinations
           </h1>

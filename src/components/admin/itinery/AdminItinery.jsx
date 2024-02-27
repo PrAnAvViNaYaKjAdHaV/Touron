@@ -148,7 +148,7 @@ const AdminItinery = () => {
                   SL.NO
                 </th>
                 <th className="py-3 px-4 uppercase font-semibold text-sm">
-                  Itinery Title
+                Itinerary Title
                 </th>
                 <th className="py-3 px-4 uppercase font-semibold text-sm">
                   Country

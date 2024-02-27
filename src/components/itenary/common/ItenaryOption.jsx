@@ -54,7 +54,7 @@ const ItenaryOption = ({ itinery, countryData }) => {
   return (
     <div className="space-y-2 pt-10" id="itinerary">
       <h1 className=" font-semibold text-stone-800 text-xl mb-4">
-        Itinery option
+      Itineraries option
       </h1>
       {itinery?.days?.map((day, index) => (
         <div

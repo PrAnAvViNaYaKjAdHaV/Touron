@@ -3,7 +3,7 @@ import { FaCity, FaLocationDot } from "react-icons/fa6";
 import { MdOutlineTravelExplore, MdTravelExplore } from "react-icons/md";
 import { FaPlaneUp } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
-import { PiSquareHalfLight } from "react-icons/pi";
+import { FaTasks } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import logoImg from "../../../assets/images/common/touronWhileLogo.png";
 import { useSelector } from "react-redux";
@@ -35,7 +35,7 @@ const SidebarCustomize = () => {
   const nearestBranch = useSelector(selectNearestBranch);
 
   return (
-    <div className="hidden lg:flex lg:fixed left-0 top-0 bottom-0 xl:w-[23%] bg-gradient-to-b from-[#6a85ff] to-[#0D4DD0] text-stone-50 font-noto-sans text-xl font-semibold py-2 md:px-6 lg:px-10 z-20">
+    <div className="hidden lg:flex lg:fixed left-0 top-0 bottom-0 xl:w-[23%] bg-gradient-to-b from-[#6a85ff] to-[#0D4DD0] text-stone-50 font-Belleza text-xl font-semibold py-2 md:px-6 lg:px-10 z-20">
       <div className=" flex flex-col items-start justify-center gap-12 h-full w-full -mt-10">
         <div className=" flex justify-center items-center w-full">
           <img className=" w-24" src={logoImg} alt="" />
@@ -101,7 +101,7 @@ const SidebarCustomize = () => {
           } hover:text-stone-400  duration-300`}
         >
           <FaCalendarAlt />
-          <h1>Date & Itenary</h1>
+          <h1>Date & Itinerary</h1>
         </Link>
         {/* <Link
           to={
@@ -137,8 +137,8 @@ const SidebarCustomize = () => {
             "scale-110 text-[#90CEFA]"
           } hover:text-stone-400  duration-300`}
         >
-          <PiSquareHalfLight />
-          <h1>Query Submission</h1>
+         <FaTasks/>
+          <h1>Final Call</h1>
         </Link>
       </div>
     </div>

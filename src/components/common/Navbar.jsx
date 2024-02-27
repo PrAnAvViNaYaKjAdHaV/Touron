@@ -54,40 +54,46 @@ const Navbar = (type) => {
       >
         <Link
           className={`${
-            currentPathname === "/" && " underline "
-          } hover:text-stone-400 duration-300 font-extrabold`}
+            currentPathname === "/"
+          } hover:text-stone-400 duration-300 font-medium`}
           to="/"
         >
           HOME
         </Link>
         <Link
           className={`${
-            currentPathname === "/destination" && " underline "
-          }  hover:text-stone-400 duration-300 font-extrabold`}
+            currentPathname === "/destination"}  hover:text-stone-400 duration-300 font-medium`}
           to="/destination"
         >
-          DESTINATION
+          INTERNATIONAL
         </Link>
         <Link
           className={`${
-            currentPathname === "/itenary" && " underline "
-          }  hover:text-stone-400 duration-300 font-extrabold`}
+            currentPathname === "/destination/india"}  hover:text-stone-400 duration-300 font-medium`}
+          to="/destination/india"
+        >
+          DOMESTIC
+        </Link>
+        <Link
+          className={`${
+            currentPathname === "/itenary" 
+          }  hover:text-stone-400 duration-300 font-medium`}
           to="/itenary"
         >
           ITINERARIES
         </Link>
         <Link
           className={`${
-            currentPathname === "/blogs" && " underline "
-          }  hover:text-stone-400 duration-300 font-extrabold`}
+            currentPathname === "/blogs" 
+          }  hover:text-stone-400 duration-300 font-medium`}
           to="/blogs"
         >
           BLOG
         </Link>
         <Link
           className={`${
-            currentPathname === "/visa" && " underline "
-          }  hover:text-stone-400 duration-300 font-extrabold`}
+            currentPathname === "/visa"
+          }  hover:text-stone-400 duration-300 font-medium`}
           to="https://visa.touron.in/"
           target="blank"
         >

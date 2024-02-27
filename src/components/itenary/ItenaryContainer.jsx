@@ -64,7 +64,7 @@ const ItenaryContainer = () => {
       <Navbar />
       <div className=" bg-white py-5 px-7">
         <div className=" border border-stone-300 rounded-md px-8 py-5 flex justify-between items-center mb-4">
-          <h1 className=" font-semibold text-stone-800 text-2xl">Itineries</h1>
+          <h1 className=" font-semibold text-stone-800 text-2xl items-center">Itineraries - Customize plan for your travel</h1>
         </div>
 
         {/* Filter buttons */}
