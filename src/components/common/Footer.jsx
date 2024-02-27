@@ -66,14 +66,13 @@ const Footer = () => {
           <div>
             {/* <img src="#" className="mr-5 h-6 sm:h-9" alt="logo" /> */}
             <img className=" w-16 mt-0.5 mb-2" src={Logo} alt="" />
-            <p className="max-w-xs mt-4 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-              accusantium.
+            <p className="max-w-xs mt-4 text-md text-gray-600 text-justify">
+            Discover the beauty of journeys with tour On - where every trip is a story waiting to unfold. Embark on unforgettable adventures, forging connections that last a lifetime. Your journey begins here, let's explore the world together.
             </p>
             <div className="flex mt-8 space-x-6 text-gray-600">
               <a
                 className="hover:opacity-75"
-                href
+                href = "https://www.facebook.com/touronholidays/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -93,7 +92,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href = "https://www.instagram.com/touronholidays/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -113,7 +112,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href = "https://twitter.com/touronholidays/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -189,33 +188,35 @@ const Footer = () => {
             </div>
             <div className=" lg:ml-5 sm:order-5">
               <p className="font-medium">Contact us</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <nav className="flex flex-col mt-3 space-y-0.5 text-sm text-gray-500">
                 <a
                   href="https://www.google.com/maps/place/tour+On/@13.080703,80.1950502,17z/data=!3m2!4b1!5s0x3a52640335b64d99:0xc3274e3bb225aed3!4m6!3m5!1s0x3a525f4556f125d3:0xf35cba654a2f8878!8m2!3d13.080703!4d80.1976251!16s%2Fg%2F11g2r7gzj2?entry=ttu"
                   target="_blank"
-                  className=" grid grid-cols-[12px_1fr] items-start gap-2 text-gray-50 border border-stone-700 bg-stone-700 hover:bg-white hover:text-stone-700 duration-300 rounded w-fit py-1.5 pl-2 pr-3 font-medium text-sm"
+                  className=" grid grid-cols-[12px_1fr] items-start gap-2 text-gray-50 border border-stone-700 bg-stone-700 hover:bg-white hover:text-stone-700 duration-300 rounded w-fit py-1.5 pl-2 pr-3 font-medium text-sm mb-2"
                 >
                   <IoLocationOutline className=" mt-1" />
                   <p>Chennai</p>
                 </a>
-                <p>The Hive, Level 3 VR Mall,</p>
-                <p>Next to Madras House,</p>
-                <p>Thirumangalam, Chennai - 40 </p>
+                <p>The Hive, Level 3,</p>
+                <p>VR Mall,</p> 
+                <p>Madras House,</p>
+                <p>Anna Nagar, Chennai - 40 </p>
               </nav>
             </div>
             <div className=" sm:order-6">
               <p className="font-medium h-6"></p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <nav className="flex flex-col mt-3 space-y-0.5 text-sm text-gray-500">
                 <a
                   href="https://www.google.com/maps/place/tour+On/@13.080703,80.1950502,17z/data=!3m2!4b1!5s0x3a52640335b64d99:0xc3274e3bb225aed3!4m6!3m5!1s0x3a525f4556f125d3:0xf35cba654a2f8878!8m2!3d13.080703!4d80.1976251!16s%2Fg%2F11g2r7gzj2?entry=ttu"
                   target="_blank"
-                  className=" grid grid-cols-[12px_1fr] items-start gap-2 text-gray-50 border border-stone-700 bg-stone-700 hover:bg-white hover:text-stone-700 duration-300 rounded w-fit py-1.5 pl-2 pr-3 font-medium text-sm"
+                  className=" grid grid-cols-[12px_1fr] items-start gap-2 text-gray-50 border border-stone-700 bg-stone-700 hover:bg-white hover:text-stone-700 duration-300 rounded w-fit py-1.5 pl-2 pr-3 font-medium text-sm mb-2"
                 >
                   <IoLocationOutline className=" mt-1" />
                   <p>Coimbatore</p>
                 </a>
-                <p>No. 147-148, DB Road,</p>
-                <p>1st Floor, Vijay Enclave,</p>
+                <p>No. 147-148,</p>
+                <p>DB Road, 1st Floor,</p>
+                <p>Vijay Enclave, </p>
                 <p>R.S.Puram, Coimbatore - 02</p>
               </nav>
             </div>

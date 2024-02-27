@@ -8,10 +8,10 @@ const PolicyContainer = () => {
       </h1>
       <div className="flex flex-col gap-5 my-10 bg-white px-8 py-5 rounded-lg shadow-md">
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             About this Policy
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             tour On (A Brand of Lotsatravel Holidays LLP) takes its data
             protection and privacy responsibilities seriously. Please read the
             following privacy policy (Privacy Policy) to understand how we use
@@ -30,7 +30,7 @@ const PolicyContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="text-2xl text-stone-800 font-bold">
+          <h1 className="text-xl text-stone-800 font-bold">
             What Information do we collect about you?
           </h1>
           <h1 className="mb-1 text-xl text-stone-800 font-bold">

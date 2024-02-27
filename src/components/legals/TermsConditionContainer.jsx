@@ -8,11 +8,11 @@ const TermsConditionContainer = () => {
       </h1>
       <div className="flex flex-col gap-5 my-10 bg-white px-8 py-5 rounded-lg shadow-md">
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             WE OFFER: Planned Tour, Surprise Tour, Road Trip, Honeymoon Tour,
             Luxury Tour, Wildlife Tour By Flight/Train/Bus:
           </h1>
-          <ul>
+          <ul className="text-sm">
             <li>Travel reservation</li>
             <li>
               We book 3 types of transportation for the Tour Train, Bus, Flight
@@ -26,39 +26,10 @@ const TermsConditionContainer = () => {
           </ul>
         </div>
         <div className="">
-          <h1 className="text-2xl text-stone-800 font-bold">
-            Roadtrip By Car/Bike:
-          </h1>
-          <div className=" text-stone-700 ">
-            <ul>
-              <li>Accommodation reservation</li>
-              <li>
-                Curated map of recommendations (based upon your survey
-                responses)
-              </li>
-              <li>Roadside attractions to check out along the drive</li>
-              <li>
-                You can bring either your own vehicle or we will arrange based
-                on request
-              </li>
-              <li>You MUST be a licensed driver</li>
-              <li>
-                We only help you find rented Car/Bike based on your request and
-                we will not charge on the package. The price completely depends
-                on the renting partner
-              </li>
-              <li>
-                *Smoking may NOT permitted in some of our accommodations, and
-                may result in fines or expulsions from your accommodation!
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             HOW IT WORKS
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             You tell us your budget, date and about your travel preferences, and
             then we book your tour based upon this information. Destinations
             will have public or private transportation and plenty of resources
@@ -71,7 +42,7 @@ const TermsConditionContainer = () => {
           <h1 className="mb-1 text-xl text-stone-800 font-bold">
             WE SEND YOU:
           </h1>
-          <div className=" text-stone-700 ">
+          <div className=" text-sm text-justify text-stone-700 ">
             <p>
               An envelope in the mail one week before you depart. This envelope
               contains information about your destination, travel vouchers, stay
@@ -88,8 +59,8 @@ const TermsConditionContainer = () => {
           </div>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">WE DO NOT:</h1>
-          <p className=" text-stone-700 ">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">WE DO NOT:</h1>
+          <p className=" text-sm text-justify text-stone-700 ">
             Book or pay for any of your activities (we just give you
             recommendations!) for all your destination Pay for your food or
             speciality dining unless specified in the itinerary Provide
@@ -97,8 +68,8 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">PAYMENTS:</h1>
-          <div className=" text-stone-700 ">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">PAYMENTS:</h1>
+          <div className="text-sm text-justify text-stone-700 ">
             <p>
               You pay for your trip directly through Payment links, Bank
               Transfers We use secure payment service to process all payments,
@@ -108,17 +79,17 @@ const TermsConditionContainer = () => {
           </div>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">PETS:</h1>
-          <p className=" text-stone-700 ">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">PETS:</h1>
+          <p className=" text-stone-700 text-justify text-sm ">
             We’re sure your pets are insanely cute, but you can’t bring them
             with you on this trip. No pets allowed, sorry.
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             TERMS + CONDITIONS:
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             The purchase of any travel services offered by tour On (hereinafter
             “Lotsatravel Holidays LLP") constitutes a contractual arrangement
             between The Client (all travellers on the trip, hereinafter as
@@ -135,10 +106,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             TOUR DESTINATION
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             tour On chooses where you go based on your budget, preferences, and
             travel dates. Have an open mind, get ready to explore, and we’re
             sure you’ll love where you end up! By agreeing to these Terms &
@@ -152,21 +123,21 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             The destinations we've sent our travellers to thus far include:
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             If there are any specific cities you do not wish to visit on your
             trip with TourOn, please let us know and we will avoid it for your
             vacation.
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             TRAVEL DETAILS{" "}
           </h1>
           <h1 className=" text-xl text-stone-800 font-bold">Name Changes</h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Please, please make sure your name matches your ID exactly! The name
             change charge is completely based on the service provider fee and we
             are not liable for providing incorrect name. All passenger details
@@ -182,10 +153,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Ticket Changes
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Need to change your travel dates/times? We’ll do our best, but we
             can’t make any promises. Give us a call as soon as possible if
             something comes up. Changes are subject to availability. If you have
@@ -199,10 +170,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Day of Travel{" "}
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             We’ll tell you exactly when and where you need to be to catch your
             flight, bus, or train. PLEASE don’t be late. If you have any
             questions about your reservation, give us a call! We’ll give you as
@@ -217,10 +188,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Missed Travel
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             If you miss your travel, there’s not much we can do. We’ll give you
             all the information you need to get there with plenty of time, and
             it’s up to you to get there. If you fail to check in on time for a
@@ -232,10 +203,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Cancelled Travel
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             If you need to cancel your trip, call us ASAP! We can’t promise
             you’ll get your money back, because that depends on the
             transportation + accommodation companies, but we’ll do our best for
@@ -248,10 +219,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Ticket Delivery
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Double check your email address! This is how we’re sending you your
             tickets and all important information the day before you leave.
             You’ll be receiving an envelope in the mail before you leave, so
@@ -266,10 +237,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Luggage Restrictions
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             We’ll let you know exactly how to pack - what checked bags you’re
             allowed, etc. If you’re a heavy packer, any extra fees are your
             responsibility. Most of the domestic airline will provide 15kg
@@ -291,10 +262,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Air Transportation Safety Compliance
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Don’t bring any weapons on the plane. Please. Important airline
             ticket terms and conditions and other important notices apply to air
             transportation. Indian law forbids the carriage of hazardous
@@ -315,10 +286,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Accommodation Compliance
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Follow the rules! Don’t smoke, don’t break anything. If you get
             charged for anything by non compliance as per hotel policy we can’t
             help you there. Note that your payment through TourOn covers your
@@ -338,10 +309,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Important Note – Conditions Beyond Our Control
           </h1>
-          <p className=" text-stone-700 ">
+          <p className=" text-justify text-sm text-stone-700 ">
             There are some things that even we can’t control (natural disasters,
             food poisoning, etc.) If something goes seriously wrong, we can’t
             promise any full refunds. As always, just give us a call and we’ll
@@ -363,10 +334,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Liability Statement
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             We’ve done our absolute best to make sure your accommodation and
             travel arrangements are top-notch. If you think they’re sub-par, let
             us know. Unfortunately, there are some things that are simply out of
@@ -418,17 +389,17 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             PAYMENTS, REFUNDS + RISK
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Please note that any confirmed booking is subject to your approval
             for the transaction.
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">Refunds</h1>
-          <p className=" text-stone-700 ">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">Refunds</h1>
+          <p className="text-sm text-justify text-stone-700 ">
             Basically, refunds are not guaranteed. Please note that any request
             for refunds is subject to these Terms & Conditions. While we will
             consider refund requests on a case by case basis, we do not
@@ -445,10 +416,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             Safety + Personal Risk
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             TourOn is not responsible for injuries and damages that you may
             incur during the course of your trip, including but not limited to:
             injury or theft during travel by train, aircraft, bus or other means
@@ -463,10 +434,10 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">
             GIFT CARDS & GIFT CARD REFUNDS
           </h1>
-          <p className=" text-stone-700 ">
+          <p className="text-sm text-justify text-stone-700 ">
             Gift cards are valid for One year after the purchase date. If a gift
             card has been purchased and either the purchaser or the recipient of
             the gift card would like a refund, its not accepted after it
@@ -474,8 +445,8 @@ const TermsConditionContainer = () => {
           </p>
         </div>
         <div className="">
-          <h1 className="mb-1 text-2xl text-stone-800 font-bold">MEDIA</h1>
-          <p className=" text-stone-700 ">
+          <h1 className="mb-1 text-xl text-stone-800 font-bold">MEDIA</h1>
+          <p className="text-sm text-justify text-stone-700 ">
             For travellers: By sending us photos from your trip, you agree to
             grant TourOn full usage rights to your photos for any
             commercial/promotional purposes, including collaborations with
