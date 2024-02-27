@@ -69,7 +69,7 @@ const DestinationContainer = () => {
           </div>
         </div>
 
-        <div className=" py-10 flex justify-center flex-wrap gap-8">
+        <div className=" lg:py-10 md:py-10 flex justify-center flex-wrap xl:gap-6 xl:py-10 lg:gap-7 md:gap-7">
           {currentCountries.map((destination) => {
             return (
               <DestinationCard
